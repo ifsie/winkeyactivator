@@ -1,7 +1,4 @@
-import subprocess
-import os
-import colorama
-import time
+import subprocess, os, colorama, time
 from colorama import Fore
 
 def get_windows_dir():
