@@ -1,6 +1,7 @@
 import subprocess
 import os
 import colorama
+import time
 from colorama import Fore
 
 def get_windows_dir():
@@ -63,6 +64,8 @@ def main():
     windows_dir = get_windows_dir()
     if check_activation_status(windows_dir):
         print(f"windows is already {Fore.GREEN}activated{Fore.RESET}.")
+        time.sleep(2)
+        
     else:
         print(f"windows is not {Fore.RED}activated{Fore.RESET}. trying to activate")
         activation_keys = read_activation_keys()
